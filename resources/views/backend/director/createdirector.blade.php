@@ -14,10 +14,22 @@
                         <div class=" col-6">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title">users</h4>
+                                    <h4 class="card-title">Create Director</h4>
                                 </div>
+                                @session('success')
+                                <div class="alert alert-success">
+                                     {{ $value }}
+                                </div>
+                                @endsession
+
+                                 @session('error')
+                                <div class="text-danger">
+                                     {{ $value }}
+                                </div>
+                                @endsession
                                 <div class="card-body">
-                                    <form class="form form-vertical">
+                                    <form action='{{ route('create.director') }}' method="POST" enctype="multipart/form-data" class="form form-vertical">
+                                        @csrf
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="mb-1">
@@ -26,6 +38,12 @@
                                                         <span class="input-group-text"><i data-feather="user"></i></span>
                                                         <input type="text" id="first-name-icon" class="form-control"
                                                             name="name" placeholder="First Name" />
+                                                            <span class="text-danger">
+                                                                @error('name')
+                                                                {{ $message }}
+                                                                @enderror
+
+                                                            </span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -34,6 +52,12 @@
                                                 <div class="mb-3">
                                                     <label for="formFile" class="form-label">image</label>
                                                     <input class="form-control" type="file" id="formFile" name="image">
+                                                        <span class="text-danger">
+                                                                @error('image')
+                                                                {{ $message }}
+                                                                @enderror
+
+                                                            </span>
                                                 </div>
                                             </div>
 

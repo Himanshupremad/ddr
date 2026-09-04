@@ -14,6 +14,7 @@ Route::get('/', function () {
 
 
 route::get('admin', [dashboardController::class, 'dashboard']);
+route::post('admin/director', [directorController::class, 'storedirector'])->name('create.director');
 route::get('admin/director', [directorController::class, 'createdirector'])->name('createdirector');
-route::get('admin/listdirector', [listdirectorController::class, 'listdirector'])->name('listdirector');
+route::get('admin/listdirector', [directorController::class, 'listdirector'])->name('listdirector');
 

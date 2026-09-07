@@ -96,6 +96,38 @@
 
 
             <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="file-text"></i><span
+                        class="menu-title text-truncate" data-i18n="Invoice">Gallery</span></a>
+                <ul class="menu-content">
+                    <li><a class="d-flex align-items-center" href="{{ route('creategallery') }}"><i
+                                data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">Create Gallery
+                                </span></a>
+                    </li>
+                    <li><a class="d-flex align-items-center" href="{{ route('listgallery') }}"><i
+                                data-feather="circle"></i><span class="menu-item text-truncate"
+                                data-i18n="Preview">Gallery List</span></a>
+                    </li>
+
+                </ul>
+            </li>
+
+            
+            <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="file-text"></i><span
+                        class="menu-title text-truncate" data-i18n="Invoice">Amenities</span></a>
+                <ul class="menu-content">
+                    <li><a class="d-flex align-items-center" href="{{ route('createamenities') }}"><i
+                                data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">Create Amenities
+                                </span></a>
+                    </li>
+                    <li><a class="d-flex align-items-center" href="{{ route('listamenities') }}"><i
+                                data-feather="circle"></i><span class="menu-item text-truncate"
+                                data-i18n="Preview">Amenities List</span></a>
+                    </li>
+
+                </ul>
+            </li>
+
+
+            <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="file-text"></i><span
                         class="menu-title text-truncate" data-i18n="Invoice">Invoice</span></a>
                 <ul class="menu-content">
                     <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i

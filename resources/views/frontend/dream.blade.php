@@ -41,7 +41,7 @@
     </section>
 
 
-    <section id="Projects">
+    {{-- <section id="Projects">
 
         <div class="rankhead">
             <h1>Our Top Project</h1>
@@ -136,7 +136,52 @@
 
             </div>
         </div>
+    </section> --}}
+
+
+    <section>
+        <div class="container ">
+            <div class="allcontent">
+                <div class="ourproject">
+                    <div class="imgg">
+                        <img src="{{ asset('frontend/images/1769765922_main.webp') }}" alt="">
+                    </div>
+                    <div class="contents">
+                        <h4>The Royal Palms</h4>
+                        <p>Palm View Homes is a premium independent housing <br> project that offers luxury, pri...</p>
+                        <h5>View Details →</h5>
+                    </div>
+                </div>
+
+                <div class="ourproject">
+                    <div class="imgg">
+                        <img src="{{ asset('frontend/images/1769765533_main.webp') }}" alt="">
+                    </div>
+                    <div class="contents">
+                        <h4>Palm View Homes</h4>
+                        <p>Metro Business Park is a modern commercial development <br> designed to meet the need...</p>
+                        <h5>View Details →</h5>
+
+                    </div>
+                </div>
+
+                <div class="ourproject">
+                    <div class="imgg">
+                        <img src="{{ asset('frontend/images/1769765922_main.webp') }}" alt="">
+                    </div>
+                    <div class="contents">
+                        <h4>Silver Heights Apartments</h4>
+                        <p>Palm View Homes is a premium independent housing <br> project that offers luxury, pri...</p>
+                        <h5>View Details →</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
     </section>
+
     <section class="newrank" id="newrank">
         <div class="newrank1">
             <button>AMENITIES</button>

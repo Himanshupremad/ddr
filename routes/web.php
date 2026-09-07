@@ -3,6 +3,7 @@
 use App\Http\Controllers\backend\dashboardController;
 use App\Http\Controllers\backend\directorController;
 use App\Http\Controllers\backend\listdirectorController;
+use App\Http\Controllers\backend\projectController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -18,3 +19,8 @@ route::post('admin/director', [directorController::class, 'storedirector'])->nam
 route::get('admin/director', [directorController::class, 'createdirector'])->name('createdirector');
 route::get('admin/listdirector', [directorController::class, 'listdirector'])->name('listdirector');
 
+
+
+route::post('admin/project', [projectController::class, 'storeproject'])->name('create.project');
+route::get('admin/project', [projectController::class, 'createproject'])->name('createproject');
+route::get('admin/listproject', [projectController::class, 'listproject'])->name('listproject');
